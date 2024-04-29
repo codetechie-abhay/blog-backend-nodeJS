@@ -1,4 +1,3 @@
-
 # 🚀 blog-backend-nodeJS
 
 This is a backend server written in Node.js using Express for a blogging website.
@@ -18,18 +17,20 @@ This is a backend server written in Node.js using Express for a blogging website
    ```
 
 2. Install dependencies:
-   ```
+   ```bash
    npm install
    ```
 
-3. Create a `.env` file in the root directory and add your MongoDB URI:
-   ```
-   MONGODB_URI=<your-mongodb-uri>
-   ```
+3. Set up MongoDB:
+   - Ensure MongoDB is installed on your system.
+   - Start MongoDB server:
+     ```bash
+     mongosh
+     ```
 
-4. Start the server:
-   ```
-   npm start
+4. Create a `.env` file in the root directory and add your MongoDB URI:
+   ```bash
+   MONGODB_URI=<your-mongodb-uri>
    ```
 
 ## Usage
@@ -41,7 +42,14 @@ This is a backend server written in Node.js using Express for a blogging website
 
 ## Quick Start
 
-```bash
+1. Start the server:
+   ```bash
+   npm start
+   ```
+
+## Code Snippet
+
+```javascript
 require("dotenv").config();
 
 const path = require("path");
